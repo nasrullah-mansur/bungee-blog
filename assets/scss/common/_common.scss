@@ -28,4 +28,8 @@ h6 {
     color: $title-color;
 }
 
+:focus {
+    outline: none;
+    border: 0;
+}
 

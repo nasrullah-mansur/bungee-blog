@@ -11,6 +11,8 @@ Description Length =
 Title Font = Popins;
 Body Font = Open Sanse;
 
+Brand logo max width = 150px;
+
 
 
 
