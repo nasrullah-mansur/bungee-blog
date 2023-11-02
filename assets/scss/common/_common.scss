@@ -33,3 +33,8 @@ h6 {
     border: 0;
 }
 
+::selection {
+    background-color: $title-color;
+    color: #fff;
+}
+

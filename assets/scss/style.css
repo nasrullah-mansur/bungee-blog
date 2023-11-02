@@ -39,6 +39,16 @@ h6 {
   border: 0;
 }
 
+::-moz-selection {
+  background-color: #212428;
+  color: #fff;
+}
+
+::selection {
+  background-color: #212428;
+  color: #fff;
+}
+
 .header .topbar {
   background-color: #212428;
   padding: 5px 0;
@@ -156,7 +166,6 @@ h6 {
 }
 
 .footer {
-  margin-top: 200px;
   padding-top: 100px;
   background-color: #212428;
 }
@@ -211,6 +220,248 @@ h6 {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.blog-cart {
+  margin-bottom: 30px;
+}
+.blog-cart h3 a {
+  display: inline-block;
+  padding-top: 15px;
+  color: #212428;
+  font-size: 16px;
+  line-height: 26px;
+  transition: all 0.3s;
+}
+.blog-cart h3 a:hover {
+  color: #f70d28;
+}
+.blog-cart .info {
+  display: flex;
+  align-items: center;
+}
+.blog-cart .info .date,
+.blog-cart .info .comment {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 12px;
+}
+.blog-cart .info .date span,
+.blog-cart .info .comment span {
+  display: inline-block;
+  padding-left: 8px;
+}
+.blog-cart p {
+  font-size: 14px;
+  line-height: 26px;
+  padding-top: 10px;
+}
+.blog-cart .read-more {
+  display: inline-block;
+  margin-top: 5px;
+  border: 1px solid #e9e9e9;
+  padding: 14px 30px;
+  color: #333333;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.blog-cart .read-more:hover {
+  border-color: #1c1c21;
+  background-color: #1c1c21;
+  color: #fff;
+}
+
+.custom-pagination {
+  display: flex;
+  margin-top: 15px;
+}
+.custom-pagination li {
+  margin-right: 5px;
+}
+.custom-pagination li a {
+  background: #F7F7FD;
+  font-size: 14px;
+  color: #3b3b3b;
+  font-weight: 700;
+  display: inline-block;
+  padding: 9px 18px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  transition: all 0.3s;
+}
+.custom-pagination li a:hover {
+  color: #f70d28;
+}
+.custom-pagination li.active a {
+  color: #f70d28;
+}
+
+.sidebar .sidebar-item {
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #e9e9e9;
+}
+.sidebar .sidebar-item .sidebar-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.sidebar .sidebar-item .sidebar-category ul li {
+  margin-bottom: 10px;
+}
+.sidebar .sidebar-item .sidebar-category ul li:last-child {
+  margin-bottom: 0;
+}
+.sidebar .sidebar-item .sidebar-category ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666666;
+}
+.sidebar .sidebar-item .sidebar-category ul li a span {
+  display: block;
+}
+.sidebar .sidebar-item .sidebar-category ul li a span:last-child {
+  margin-left: auto;
+}
+.sidebar .sidebar-item .sidebar-category ul li a::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f30b";
+  font-size: 10px;
+  padding-right: 5px;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item:last-child {
+  margin-bottom: 0;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .img {
+  width: 100px;
+  height: 85px;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content {
+  width: calc(100% - 100px);
+  padding-left: 10px;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content a {
+  display: block;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content a.category {
+  font-size: 12px;
+  color: #666666;
+  transition: all 0.3s;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content a.category:hover {
+  color: #212428;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content a.title {
+  font-size: 13px;
+  color: #212428;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content a.title:hover {
+  color: #f70d28;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content .calendar {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content .calendar i {
+  color: #f70d28;
+  font-size: 11px;
+}
+.sidebar .sidebar-item .sidebar-popular-post .post-item .content .calendar span {
+  padding-left: 5px;
+  color: #666666;
+  font-size: 11px;
+}
+.sidebar .sidebar-item .subscribe-area p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.sidebar .sidebar-item .subscribe-area form input {
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+  border: 1px solid #e9e9e9;
+  padding: 10px;
+}
+.sidebar .sidebar-item .subscribe-area form button {
+  background: #1c1c21;
+  padding: 15px 50px;
+  border: 0;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.sidebar .sidebar-item .subscribe-area form button:hover {
+  background-color: #f70d28;
+}
+.sidebar .sidebar-item .most-visited .info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.sidebar .sidebar-item .most-visited .info .date,
+.sidebar .sidebar-item .most-visited .info .comment {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 12px;
+}
+.sidebar .sidebar-item .most-visited .info .date span,
+.sidebar .sidebar-item .most-visited .info .comment span {
+  display: inline-block;
+  padding-left: 8px;
+}
+.sidebar .sidebar-item .most-visited h4 a {
+  font-size: 16px;
+  color: #212428;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+}
+.sidebar .sidebar-item .most-visited h4 a:hover {
+  color: #f70d28;
+}
+.sidebar .sidebar-item .popular-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar .sidebar-item .popular-tags li a {
+  color: #666;
+  border: 1px solid #e9e9e9;
+  font-size: 13px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-bottom: 9px;
+  margin-right: 7px;
+  transition: all 0.3s;
+}
+.sidebar .sidebar-item .popular-tags li a:hover {
+  background-color: #212428;
+  color: #fff;
+  border-color: transparent;
+}
+
 .banner .banner-slider .slider-item {
   padding-top: 300px;
   padding-bottom: 80px;
@@ -263,4 +514,8 @@ h6 {
 .banner .banner-slider:hover .slick-arrow {
   visibility: visible;
   opacity: 1;
+}
+
+.post {
+  padding: 60px 0;
 }/*# sourceMappingURL=style.css.map */
