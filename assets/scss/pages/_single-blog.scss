@@ -1,0 +1,117 @@
+.single-blog-content {
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    .calendar {
+        margin: 20px 0 20px;
+        display: flex;
+        align-items: center;
+
+        .category {
+            display: inline-block;
+            padding: 4px 15px;
+            background-color: $primary-color;
+            font-size: 12px;
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-right: 20px;
+        }
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+
+        .date,
+        .comment {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 12px;
+
+            span {
+                display: inline-block;
+                padding-left: 8px;
+            }
+        }
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .details {
+        p {
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            position: relative;
+            padding-left: 40px;
+            font-size: 24px;
+            line-height: 36px;
+            color: $title-color;
+
+            &::before {
+                content: '';
+                width: 5px;
+                height: 100%;
+                background-color: $border-color;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+}
+
+
+// Prev next;
+.prev-next {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .prev,
+    .next {
+        width: 50%;
+
+        span {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: $body-color;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        a {
+            display: inline-block;
+            max-width: 385px;
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 500;
+            color: $title-color;
+            font-family: $title-font;
+            transition: all .3s;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

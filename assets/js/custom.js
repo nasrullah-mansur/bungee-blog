@@ -1,5 +1,24 @@
 
 $(document).ready(function() {
+
+    $(window).on('scroll', function() {
+        let scrollTop = $(this).scrollTop();
+
+        if(scrollTop > 100) {
+            $('.back-to-top').addClass('active');
+        } else {
+            $('.back-to-top').removeClass('active');
+        }
+    })
+
+    $('.back-to-top').on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0,
+        });
+    })
+
+
+
     $('.header .main-menu-content .search i').on('click', function() {
         $('.header .main-menu-content .search .search-area').addClass('active');
     })
