@@ -46,6 +46,12 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 991.98px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
         .copyright-text {
             p {
                 color: rgba(255, 255, 255, 0.4);
@@ -55,6 +61,8 @@
         .copyright-list {
             ul {
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
 
                 li {
                     margin-left: 10px;

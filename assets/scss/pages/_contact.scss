@@ -55,6 +55,10 @@
 
             .half {
                 width: calc(50% - 15px);
+
+                @media (max-width: 575.98px) {
+                    width: 100%;
+                }
             }
 
             textarea {
